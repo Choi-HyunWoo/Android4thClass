@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
         btn = (Button)findViewById(R.id.btn_next);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +72,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ScrollingActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn = (Button)findViewById(R.id.btn_fifth);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FifthActivity.class);
                 startActivity(intent);
             }
         });
